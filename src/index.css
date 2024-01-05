@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EEF5FF;
+  background-color: #DCF2F1;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +16,14 @@ code {
 }
 
 .dark {
+    background-color: #1b2430;
+}
+
+.my-bg {
+  background-color: #DCF2F1;
+}
+
+.my-bg-dark {
     background-color: #1b2430;
 }
 

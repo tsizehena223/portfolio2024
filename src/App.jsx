@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -10,6 +12,7 @@ function App() {
 
     useEffect(() => {
         const body = document.body;
+
         if (isDarkMode) {
             body.classList.add("dark");
         } else {
@@ -20,6 +23,11 @@ function App() {
     return (
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
+
+            <div id="others">
+                <About isDarkMode={isDarkMode} />
+                <Contact />
+            </div>
         </>
     );
 }
