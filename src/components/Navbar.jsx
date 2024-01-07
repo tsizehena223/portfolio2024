@@ -26,10 +26,10 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
 
     return (
         <div id='navbar' className={`fixed pb-5 md:pb-5 lg:pb-6 lg:pt-4 flex my-0 items-center justify-between w-screen z-50 my-bg ${isDarkMode && 'my-bg-dark'}`} >
-            <div className={`my-bg border ${isDarkMode && 'border-slate-800 my-bg-dark'} font-bold left-0 top-0 flex items-center rounded-r-full lg:rounded-full lg:mx-8 shadow-xl px-8 md:px-12 py-5 md:py-6 ${isDarkMode ? 'text-slate-200' : 'text-purple-700'} hover:text-red-500`}>
+            <a href="#about" className={`my-bg border ${isDarkMode && 'border-slate-800 my-bg-dark'} font-bold left-0 top-0 flex items-center rounded-r-full lg:rounded-full lg:mx-8 shadow-xl px-8 md:px-12 py-5 md:py-6 ${isDarkMode ? 'text-slate-200' : 'text-purple-700'} i5:text-red-500 hover:cursor-pointer`}>
                 <i className={`mr-3 md:mr-4 fa fa-xl fa-user-astronaut`}></i>
                 <span className='text-xl md:text-2xl'>Sarobidi</span>
-            </div>
+            </a>
 
             <div className={`my-bg border ${isDarkMode && 'border-slate-800 my-bg-dark'} hidden md:block shadow-xl font-bold top-0 left-80 py-6 px-4 rounded-full items-center justify-center text-xl ${isDarkMode ? 'text-gray-400' : 'text-slate-500'}`}>
                 <a href="#experiences" className={`text-base lg:text-xl px-3 py-1 mx-3 hover:text-purple-600`}>Experiences</a>

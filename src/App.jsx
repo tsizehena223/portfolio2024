@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,7 +25,6 @@ function App() {
 
             <div id="others">
                 <About isDarkMode={isDarkMode} />
-                <Contact />
             </div>
         </>
     );
