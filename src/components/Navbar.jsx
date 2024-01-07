@@ -13,14 +13,14 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
     }
 
     useEffect(() => {
-        const others = document.getElementById("others");
+        const sections = document.getElementById("sections");
         const navbar = document.getElementById("navbar");
 
         if (isOpen) {
-            others.classList.add("blur-md");
+            sections.classList.add("blur-md");
             navbar.classList.add("backdrop-fiter-none");
         } else {
-            others.classList.remove("blur-md");
+            sections.classList.remove("blur-md");
         }
     }, [isOpen])
 

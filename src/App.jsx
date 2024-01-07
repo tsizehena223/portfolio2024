@@ -23,7 +23,7 @@ function App() {
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
 
-            <div id="others">
+            <div id="sections">
                 <About isDarkMode={isDarkMode} />
             </div>
         </>
