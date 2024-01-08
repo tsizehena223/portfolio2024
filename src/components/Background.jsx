@@ -45,7 +45,7 @@ const Background = () => {
         };
 
         createShapes();
-    }, []);
+    }, [dots]);
 
     return (
         <div id="background-container" className="fixed top-0 left-0 w-screen h-screen pointer-events-none">
