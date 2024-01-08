@@ -2,13 +2,14 @@ import React from "react";
 import AboutIllustration from "../assets/code.svg";
 
 const About = ({ isDarkMode }) => {
-    {/* Animation typing */}
+    {/* Animation typing
+    --- npm install react-typed ---
     var typed = new Typed(".changeWords", {
         strings: ["", "Web Developper", "Etudiant en IT"],
         typeSpeed: 100,
         BackSpeed: 60,
         loop: true
-    })
+    }) */}
     
     return (
         <div id="about" className={`h-auto pt-32 pb-10 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
