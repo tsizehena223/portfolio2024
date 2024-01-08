@@ -7,7 +7,7 @@ const About = ({ isDarkMode }) => {
 
     useEffect(() => {
         const index = setInterval(() => {
-            setIndexWord((prevWord) => (prevWord - 1 == words.length - 1 ? 0 : prevWord + 1));
+            setIndexWord((prevWord) => (prevWord == words.length - 1 ? 0 : prevWord + 1));
         }, 3000);
         return clearInterval(index);
     }, [])
