@@ -9,7 +9,7 @@ const About = ({ isDarkMode }) => {
         const index = setInterval(() => {
             setIndexWord((prevWord) => (prevWord == words.length - 1 ? 0 : prevWord + 1));
         }, 3000);
-        return clearInterval(index);
+        return () => clearInterval(index);
     }, [])
     
     return (
