@@ -20,7 +20,7 @@ const Background = () => {
                 const initialX = Math.random() * window.innerWidth;
                 const initialY = Math.random() * window.innerHeight;
 
-                shape.className = ` ${randomColor} absolute w-2 h-2 rounded-full z-0`;
+                shape.className = ` ${randomColor} absolute w-2 h-2 rounded-full z-50`;
                 container.appendChild(shape);
 
                 animateShape(shape, initialX, initialY);
