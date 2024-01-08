@@ -2,13 +2,21 @@ import React from "react";
 import AboutIllustration from "../assets/code.svg";
 
 const About = ({ isDarkMode }) => {
+    {/* Animation typing */}
+    var typed = new Typed(".changeWords", {
+        strings: ["", "Web Developper", "Etudiant en IT"],
+        typeSpeed: 100,
+        BackSpeed: 60,
+        loop: true
+    })
+    
     return (
         <div id="about" className={`h-auto pt-32 pb-10 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             <div className="text-center font-bold mx-8">
                 <p className="text-base">
                     Welcome to my portfolio website!
                 </p>
-                <h1 className="text-3xl mt-6">Hey there, I'm <span className="text-purple-700 text-2xl">Sarobidi</span> !</h1>
+                <h1 className="text-3xl mt-6">Hey there, I'm <span className="text-purple-700 text-2xl changeWords">Sarobidi</span> !</h1>
                 <p className="font-normal my-6 mx-0">Active, curious and insightful... I seek to improve myself and experiment in the field of Information Technology!</p>
                 <div className="mx-2">
                     <a href="#contact"><button className={`w-56 py-3 rounded-full shadow-md ${isDarkMode ? 'text-slate-700 my-bg' : 'my-bg-dark text-slate-300'}`}>Contact Me</button></a>
