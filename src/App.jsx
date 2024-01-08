@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import Background from "./components/Background";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -22,7 +23,7 @@ function App() {
     return (
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
-
+            <Background />
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
             </div>
