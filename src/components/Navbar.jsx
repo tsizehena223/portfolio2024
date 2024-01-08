@@ -26,7 +26,7 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
 
     return (
         <div id='navbar' className={`fixed pb-5 md:pb-5 lg:pb-6 lg:pt-4 flex my-0 items-center justify-between w-screen z-50 ${isDarkMode ? 'my-bg-dark' : 'my-bg'}`} >
-            <a href="#about" className={`border ${isDarkMode ? 'border-slate-800 my-bg-dark text-slate-200' : 'my-bg text-purple-700'} font-bold left-0 top-0 flex items-center rounded-r-full lg:rounded-full lg:mx-8 shadow-xl px-8 md:px-12 py-5 md:py-6 hover:cursor-pointer`}>
+            <a href="#about" className={`border ${isDarkMode ? 'border-slate-800 my-bg-dark text-purple-500' : 'my-bg text-purple-700'} font-bold left-0 top-0 flex items-center rounded-r-full lg:rounded-full lg:mx-8 shadow-xl px-8 md:px-12 py-5 md:py-6 hover:cursor-pointer`}>
                 <i className={`mr-3 md:mr-4 fa fa-xl fa-user-astronaut`}></i>
                 <span className='text-xl md:text-2xl'>Sarobidi</span>
             </a>
@@ -48,7 +48,7 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
                 <img src={Mode} alt='' className='hidden md:block py-5' style={modestyle} />
             </div>
 
-            <div className={`my-bg border flex items-center md:hidden text-purple-700 ${isDarkMode && 'border-slate-800 my-bg-dark text-slate-300'} rounded-l-full lg:rounded-full shadow-xl right-0 top-0 py-6 px-6 sm:px-12`}>
+            <div className={`my-bg border flex items-center md:hidden text-purple-700 ${isDarkMode && 'border-slate-800 my-bg-dark text-purple-500'} rounded-l-full lg:rounded-full shadow-xl right-0 top-0 py-6 px-6 sm:px-12`}>
                 <button onClick={handleMenu}>
                     <i className={`fa-solid fa-xl fa-${isOpen ? 'folder-open' : 'folder-closed'}`}></i>
                     <span className="hidden font-bold ml-4 min-[400px]:inline">Menu</span>
