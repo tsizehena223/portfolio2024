@@ -14,27 +14,24 @@ import Git from "../assets/tools/git.svg";
 import Linux from "../assets/tools/linux.png";
 
 const Tools = ({ isDarkMode }) => {
-    const images = [Symfony, ReactJs, Tailwind, Laravel, Php, Js, Html, Css, Github, Git, Linux, Mysql];
+    const images = [Symfony, Tailwind, Git, Laravel, Js, Html, Css, Github, ReactJs, Php, Linux, Mysql];
+    const colorAssociations = {
+        Symfony: "yellow",
+        Php: "yellow",
+        Laravel: "yellow",
+        Github: "red",
+        Git: "red",
+        Linux: "red",
+        Mysql: "red"
+    };
 
-    const colors = ["purple", "blue", "yellow", "red"];
+    const defaultColor = "blue";
 
-    const [randomColors, setRandomColors] = useState(() => {
-        return images.map(() => getRandomColor());
+    const [colors, setColors] = useState(() => {
+        return images.map((image) => {
+            return colorAssociations[image] ?? defaultColor;
+        });
     });
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setRandomColors(() => {
-                return images.map(() => getRandomColor());
-            });
-        }, 4000);
-        return () => clearInterval(intervalId);
-    }, []);
-
-    function getRandomColor() {
-        const randomIndex = Math.floor(Math.random() * colors.length);
-        return colors[randomIndex];
-    }
 
     return (
         <div id="tools" className={`${isDarkMode ? 'my-bg-dark' : 'my-bg'} mt-16 mb-8 h-auto w-screen`}>
@@ -46,7 +43,7 @@ const Tools = ({ isDarkMode }) => {
                     <img
                         alt=""
                         key={index}
-                        className={`rounded-full my-4 mx-4 animate-bounce bg-${getRandomColor()}-500 w-10`}
+                        className={`rounded-full my-4 mx-4 animate-bounce bg-${colors[index]}-500 w-10`}
                         style={{
                             animationDelay: `${index * 200}ms`
                         }}
