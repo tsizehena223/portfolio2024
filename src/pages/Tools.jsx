@@ -25,7 +25,7 @@ const Tools = ({ isDarkMode }) => {
         Mysql: "red"
     };
 
-    const defaultColor = "blue";
+    const defaultColor = "purple";
 
     const [colors, setColors] = useState(() => {
         return images.map((image) => {
