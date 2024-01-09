@@ -15,12 +15,11 @@ const Background = () => {
 
             for (let i = 1; i < dots; i++) {
                 const shape = document.createElement('div');
-                const randomColor = getRandomColor();
 
                 const initialX = Math.random() * window.innerWidth;
                 const initialY = Math.random() * window.innerHeight;
 
-                shape.className = ` ${randomColor} absolute w-2 h-2 rounded-full z-50`;
+                shape.className = `bg-purple-500 absolute w-2 h-2 rounded-full z-40`;
                 container.appendChild(shape);
 
                 animateShape(shape, initialX, initialY);
@@ -35,13 +34,6 @@ const Background = () => {
                 yoyo: true,
                 onComplete: () => animateShape(shape, initialX, initialY),
             });
-        };
-
-        const getRandomColor = () => {
-            const colors = ['red', 'blue', 'yellow', 'purple', 'pink', 'teal'];
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-            return `bg-${randomColor}-500`;
         };
 
         createShapes();
