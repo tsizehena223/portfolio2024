@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Symfony from "../assets/tools/symfony.svg";
 import ReactJs from "../assets/tools/react.svg";
@@ -14,36 +14,27 @@ import Git from "../assets/tools/git.svg";
 import Linux from "../assets/tools/linux.png";
 
 const Tools = ({ isDarkMode }) => {
-    const images = [Symfony, Tailwind, Git, Laravel, Js, Html, Css, Github, ReactJs, Php, Linux, Mysql];
-    const colorAssociations = {
-        Symfony: "yellow",
-        Php: "yellow",
-        Laravel: "yellow",
-        Github: "red",
-        Git: "red",
-        Linux: "red",
-        Mysql: "red"
-    };
-
-    const defaultColor = "purple";
-
-    const [colors, setColors] = useState(() => {
-        return images.map((image) => {
-            return colorAssociations[image] ?? defaultColor;
-        });
-    });
+    const images = [Symfony, Tailwind, Git, Laravel, Html, Php, Github, ReactJs, Js, Linux, Css, Mysql];
 
     return (
-        <div id="tools" className={`${isDarkMode ? 'my-bg-dark' : 'my-bg'} mt-16 mb-8 h-auto w-screen`}>
-            <div className={`font-bold text-center mx-6 text-xl min-[400px]:text-2xl sm:text-4xl min-[800px]:mx-40 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                <p className="mb-10 sm:mx-8">Tools and Tech I use daily for coding as a developer</p>
+        <div id="tools" className={`${isDarkMode ? 'bg-slate-800' : 'bg-light-t'} mt-16 py-32 mb-0 h-auto md:mt-24 lg:mt-32 w-screen`}>
+            <div className={`font-bold text-center mx-6 text-xl min-[400px]:text-2xl min-[458px]:mx-8 sm:text-4xl min-[800px]:mx-24 min-[1100px]:mx-40 min-[1230]:mt-28 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                <p className="mb-10 sm:mx-8">Tools and Tech I use daily for coding <br />
+                    <span className="text-purple-700 md:mt-8">as a developer</span>
+                </p>
             </div>
-            <div className={`h-2/3 flex flex-wrap items-stretch justify-center mx-0 min-[400px]:mx-32`}>
+            <div className={`h-2/3 flex flex-wrap items-stretch justify-center mx-4 min-[400px]:mx-12 md:mt-20 md:mx-32 lg:mx-72`}>
                 {images.map((imageUrl, index) => (
                     <img
                         alt=""
                         key={index}
-                        className={`rounded-full my-4 mx-4 animate-bounce bg-${colors[index]}-500 w-10`}
+                        className={`
+                            rounded-full my-4 mx-4 animate-bounce w-10 sm:w-12 md:w-16
+                            ${(index === 0 || index === 3 || index === 5) && 'bg-blue-500'}
+                            ${(index === 2 || index === 6 || index === 9 || index === 11) && 'bg-red-500'}
+                            ${(index === 4 || index === 8 || index === 7 || index === 10) && 'bg-yellow-500'}
+                            ${(index === 1 || index === 10) && 'bg-green-500'}
+                        `}
                         style={{
                             animationDelay: `${index * 200}ms`
                         }}

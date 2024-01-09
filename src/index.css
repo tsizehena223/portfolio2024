@@ -27,6 +27,14 @@ code {
     background-color: #1b2430;
 }
 
+.bg-light-t {
+    background-color: #ECF8F6;
+}
+
+#tools {
+    clip-path: circle(50% at 50% 50%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
