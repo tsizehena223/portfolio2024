@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Background from "./components/Background";
+import Tools from "./pages/Tools";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,6 +27,7 @@ function App() {
             <Background />
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
+                <Tools isDarkMode={isDarkMode} />
             </div>
         </>
     );
