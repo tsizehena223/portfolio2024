@@ -8,7 +8,7 @@ const AnimatedWords = () => {
                 2500,
                 'an IT Student',
                 2500,
-                'a Developper',
+                'a Web Developper',
                 2500
             ]}
             wrapper="span"
