@@ -12,7 +12,9 @@ const About = ({ isDarkMode }) => {
                     Hey there, <br />
                     <span className={`text-purple-${isDarkMode ? '500' : '700'} text-2xl lg:text-4xl lg:mx-0`}><span className={`text-gray-${isDarkMode ? '300' : '600'} text-3xl`}>I'm </span><AnimatedWords /></span>...
                 </h1>
-                <p className="font-normal my-6 mx-0 min-[600px]:text-xl min-[600px]:mx-12 md:mx-2 md:text-base md:mt-0 lg:mx-8 lg:pt-4 lg:text-xl min-[1124px]:mx-16">Active, curious and insightful... I seek to improve myself and experiment in the field of Information Technology!</p>
+                <p className="font-normal my-6 mx-0 min-[600px]:text-xl md:mx-2 md:text-base md:mt-0 lg:mx-8 lg:pt-4 lg:text-xl min-[1124px]:mx-16">
+                    Active, curious and insightful... I seek to improve myself and experiment in the field of Information Technology!
+                </p>
                 <div className="mx-2 min-[500px]:mx-32 min-[500px]:mt-16 md:mx-0 md:mt-0 lg:mx-8 min-[1124px]:mx-16">
                     <a href="#contact"><button className={`w-56 py-3 rounded-full shadow-md md:mr-4 md:w-40 lg:w-56 ${isDarkMode ? 'text-purple-700 my-bg' : 'my-bg-dark text-slate-300'}`}>Contact Me</button></a>
                     <a href="#resume"><button className={`w-56 mt-4 border border-slate-500 py-3 md:w-44 lg:w-56 rounded-full shadow-md ${isDarkMode ? 'text-slate-300 my-bg-dark' : 'text-purple-700 my-bg'}`}>Download Resume</button></a>
