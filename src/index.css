@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen',
@@ -35,6 +39,8 @@ code {
     clip-path: circle(50% at 50% 50%);
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.lineStyle {
+  display: block;
+  width: 2px;
+  margin-left: 9px;
+}

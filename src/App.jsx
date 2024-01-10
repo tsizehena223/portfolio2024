@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Background from "./components/Background";
 import Tools from "./pages/Tools";
+import Experience from "./pages/Experience";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -28,6 +29,7 @@ function App() {
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
                 <Tools isDarkMode={isDarkMode} />
+                <Experience isDarkMode={isDarkMode} />
             </div>
         </>
     );
