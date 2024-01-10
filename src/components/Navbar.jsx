@@ -45,7 +45,7 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
                 <a href="#experiences" className={`my-bg w-40 py-2 my-2 rounded-full shadow-lg ${isDarkMode ? 'text-slate-400 my-bg-dark' : 'text-slate-500'} hover:text-purple-600`} onClick={closeMenu} >Experiences</a>
                 <a href="#projects" className={`my-bg w-40 py-2 my-2 rounded-full shadow-lg ${isDarkMode ? 'text-slate-400 my-bg-dark' : 'text-slate-500'} hover:text-purple-600`} onClick={closeMenu} >Projects</a>
                 <a href="#tools" className={`my-bg w-40 py-2 my-2 rounded-full shadow-lg ${isDarkMode ? 'text-slate-400 my-bg-dark' : 'text-slate-500'} hover:text-purple-600`} onClick={closeMenu} >Tools</a>
-                <i className={`my-bg opacity-75 w-40 my-2 rounded-full shadow-lg px-8 py-6 fa-solid fa-${isDarkMode ? 'sun my-bg-dark' : 'moon'} fa-xl hover:cursor-pointer ${isDarkMode ? 'text-slate-300' : 'text-purple-700'}`} onClick={() => { this.onSwitchMode(); this.closeMenu(); }}></i>
+                <i className={`my-bg opacity-75 w-40 my-2 rounded-full shadow-lg px-8 py-6 fa-solid fa-${isDarkMode ? 'sun my-bg-dark' : 'moon'} fa-xl hover:cursor-pointer ${isDarkMode ? 'text-slate-300' : 'text-purple-700'}`} onClick={() => { this.props.onSwitchMode(); this.closeMenu(); }}></i>
             </div>
 
             <div className={`my-bg hidden md:block border ${isDarkMode && 'border-slate-800 my-bg-dark'} rounded-l-full lg:rounded-full lg:mx-8 shadow-xl right-0 top-0 lg:px-12 px-6 hover:cursor-pointer`} onClick={onSwitchMode}>
