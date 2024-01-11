@@ -51,7 +51,7 @@ const Experience = ({ isDarkMode }) => {
                     <div key={key} className="flex justify-center ml-0 tn:ml-4 sm:mx-16 md:mx-2 lg:mx-8 xl:ml-16">
                         <div>
                             <i className="fa fa-circle text-purple-600 mr-2 text-xl"></i>
-                            <span className={`lineStyle h-full bg-purple-600 -mt-2 mb-0 pb-0 ${index === (array.length - 1) && 'h-0'}`}></span>
+                            <span className={`lineStyle bg-purple-600 -mt-2 mb-0 pb-0 ${index === (array.length - 1) ? 'h-0' : 'h-full'}`}></span>
                         </div>
                         <div className="mr-4 mb-6">
                             <h4 className="font-bold text-xl text-purple-500">{experience.title}</h4>
@@ -70,7 +70,7 @@ const Experience = ({ isDarkMode }) => {
                     <div key={key} className="flex justify-center ml-0 tn:ml-4 cin:mr-6 sm:mx-16 md:mx-2 lg:mr-8 xl:mr-16">
                         <div>
                             <i className="fa fa-circle text-purple-600 mr-2 text-xl"></i>
-                            <span className={`lineStyle h-full bg-purple-600 -mt-2 ${(index === array.length - 1) && 'h-0'}`}></span>
+                            <span className={`lineStyle bg-purple-600 -mt-2 ${(index === array.length - 1) ? 'h-0' : 'h-full'}`}></span>
                         </div>
                         <div className="mr-4 mb-6">
                             <h4 className="font-bold text-xl text-purple-500">{education.title}</h4>
