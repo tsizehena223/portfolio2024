@@ -1,5 +1,6 @@
 import AboutIllustration from "../assets/code.svg";
 import AnimatedWords from "../components/AnimatedWords";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const About = ({ isDarkMode }) => {
     return (
@@ -23,7 +24,8 @@ const About = ({ isDarkMode }) => {
             <div className="flex items-center justify-center mt-10 min-[600px]:mt-16 md:-mt-4 md:w-2/5 lg:mr-16 lg:mt-16 min-[1124px]:mt-12">
                 <img src={AboutIllustration} alt="" className="w-1/2 min-[500px]:w-2/5 md:w-4/5 lg:w-4/5 min-[1124px]:w-3/4" />
             </div>
-        </div >
+            <ScrollIndicator />
+        </div>
     )
 }
 
