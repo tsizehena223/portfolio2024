@@ -20,7 +20,7 @@ const Experience = ({ isDarkMode }) => {
                     <div key={key} className="flex justify-center">
                         <div>
                             <i className="fa fa-circle text-purple-600 mr-2 text-xl"></i>
-                            <span className={`lineStyle h-28 bg-purple-600`}></span>
+                            <span className={`lineStyle h-24 sm:h-20 bg-purple-600`}></span>
                         </div>
                         <div className="mr-4 mb-6">
                             <h4 className="font-bold text-lg text-purple-600">{experience.title}</h4>
