@@ -60,7 +60,7 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
             <div className={`my-bg border flex items-center md:hidden text-purple-700 ${isDarkMode && 'border-slate-800 my-bg-dark text-purple-500'} rounded-l-full lg:rounded-full shadow-xl right-0 top-0 py-6 px-6 sm:px-12`}>
                 <button onClick={handleMenu}>
                     <i className={`fa-solid fa-xl fa-${isOpen ? 'folder-open' : 'folder-closed'}`}></i>
-                    <span className="hidden font-bold ml-4 min-[400px]:inline">Menu</span>
+                    <span className="hidden font-bold ml-4 tn:inline">Menu</span>
                 </button>
             </div>
         </div >
