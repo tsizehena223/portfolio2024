@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Background from "./components/Background";
 import Tools from "./pages/Tools";
 import Experience from "./pages/Experience";
+import Project from "./pages/Projects";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,6 +31,7 @@ function App() {
                 <About isDarkMode={isDarkMode} />
                 <Tools isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode} />
+                <Project isDarkMode={isDarkMode} />
             </div>
         </>
     );
