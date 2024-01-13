@@ -2,10 +2,10 @@ import React from 'react';
 import Neovim from '../assets/projects/sonic-nvim.png';
 import Portfolio from '../assets/projects/portfolio.png';
 
-const Card = ({ isDarkMode }) => {
+const CardProjects = ({ isDarkMode }) => {
     const projects = {
         1: {
-            "title": "Code",
+            "title": "Sonic-nvim",
             "content": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
             "image": Neovim,
             "link": "https://github.com/tsizehena223/sonic-nvim"
@@ -40,4 +40,4 @@ const Card = ({ isDarkMode }) => {
     );
 };
 
-export default Card;
+export default CardProjects;
