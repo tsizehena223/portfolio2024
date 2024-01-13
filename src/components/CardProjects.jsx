@@ -22,9 +22,9 @@ const CardProjects = ({ isDarkMode }) => {
         <div className='md:mx-12 lg:mx-20 six:flex'>
             {Object.entries(projects).map(([key, project]) => (
                 <div key={key} className={`m-8 sh:mx-16 six:mx-6 ${isDarkMode ? 'bg-slate-800' : 'bg-light-t'} shadow-lg rounded-lg overflow-hidden`}>
-                    <a href={project.link} className='flex items-center justify-center' target='_blank'>
+                    <a href={project.link} className='flex items-center justify-center' target='_blank' rel="noopener noreferrer">
                         <img
-                            className="w-auto h-48 md:h-64 mt-4"
+                            className="w-auto py-4 h-48 md:h-64 mt-4"
                             src={project.image}
                             alt=""
                         />
