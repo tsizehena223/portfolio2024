@@ -20,7 +20,7 @@ const Tools = ({ isDarkMode }) => {
         <div id="tools" className={`${isDarkMode ? 'bg-slate-800' : 'bg-light-t'} mt-16 py-32 mb-0 h-auto md:mt-24 lg:mt-32 w-screen`}>
             <div className={`font-bold text-center mx-6 text-xl tn:text-2xl sh:mx-8 sm:text-4xl hui:mx-24 uu:mx-40 dct:mt-28 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                 <p className="mb-10 sm:mx-8">Tools and Tech I use daily for coding <br />
-                    <span className="text-purple-700 md:mt-8">as a developer</span>
+                    <span className="text-purple-500 md:mt-8">as a developer</span>
                 </p>
             </div>
             <div className={`h-2/3 flex flex-wrap items-stretch justify-center mx-4 tn:mx-12 md:mt-20 md:mx-32 lg:mx-72`}>

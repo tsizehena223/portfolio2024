@@ -7,7 +7,7 @@ import Experience from "./pages/Experience";
 import Project from "./pages/Projects";
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     const handleSwitchMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
@@ -26,11 +26,11 @@ function App() {
     return (
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
-            <Background />
+            <Background isDarkMode={isDarkMode} />
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
-                <Tools isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode} />
+                <Tools isDarkMode={isDarkMode} />
                 <Project isDarkMode={isDarkMode} />
             </div>
         </>
