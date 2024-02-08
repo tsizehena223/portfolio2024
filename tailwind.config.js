@@ -13,6 +13,7 @@ module.exports = {
             "six": "600px",
             "md": "768px",
             "hui": "800px",
+            "nf": "900px",
             "lg": "1024px",
             "uu": "1100px",
             "lgx": "1124px",
