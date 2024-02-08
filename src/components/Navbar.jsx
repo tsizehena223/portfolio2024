@@ -64,7 +64,7 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
                 <i className='ml-4 fa-regular fa-flag fa-2x text-purple-700 hover:cursor-pointer' onClick={onSwitchLanguage}></i>
             </div>
 
-            <div className={`my-bg border flex items-center hui:hidden text-purple-700 ${isDarkMode && 'border-slate-800 my-bg-dark text-purple-500'} rounded-l-full lg:rounded-full shadow-xl right-0 top-0 py-6 px-6 sm:px-12`}>
+            <div className={`my-bg border flex items-center hui:hidden text-purple-500 ${isDarkMode && 'border-slate-800 my-bg-dark text-purple-500'} rounded-l-full lg:rounded-full shadow-xl right-0 top-0 py-6 px-6 sm:px-12`}>
                 <button onClick={handleMenu}>
                     <i className={`fa-solid fa-xl fa-${isOpen ? 'folder-open' : 'folder-closed'}`}></i>
                     <span className="hidden font-bold ml-4 tn:inline">Menu</span>
