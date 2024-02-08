@@ -18,7 +18,7 @@ const About = ({ isDarkMode }) => {
                 </p>
                 <div className="mx-2 cin:mx-32 cin:mt-16 md:mx-0 md:mt-0 lg:mx-8 lgx:mx-16">
                     <a href="#contact"><button className={`w-56 py-3 rounded-full shadow-md md:mr-4 md:w-40 lg:w-56 ${isDarkMode ? 'text-purple-700 my-bg' : 'my-bg-dark text-slate-300'}`}>Contact Me</button></a>
-                    <a href="" download={Resume} ><button className={`w-56 mt-4 border border-slate-500 py-3 md:w-44 lg:w-56 rounded-full shadow-md ${isDarkMode ? 'text-slate-300 my-bg-dark' : 'text-purple-700 my-bg'}`}>Download Resume</button></a>
+                    <a href="#resume" download={Resume} ><button className={`w-56 mt-4 border border-slate-500 py-3 md:w-44 lg:w-56 rounded-full shadow-md ${isDarkMode ? 'text-slate-300 my-bg-dark' : 'text-purple-700 my-bg'}`}>Download Resume</button></a>
                 </div>
             </div>
             <div className="flex items-center justify-center mt-10 six:mt-16 md:-mt-4 md:w-2/5 lg:mr-16 lg:mt-16 lgx:mt-12">

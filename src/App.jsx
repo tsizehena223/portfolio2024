@@ -5,9 +5,10 @@ import Background from "./components/Background";
 import Tools from "./pages/Tools";
 import Experience from "./pages/Experience";
 import Project from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     const handleSwitchMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
@@ -32,6 +33,7 @@ function App() {
                 <Experience isDarkMode={isDarkMode} />
                 <Tools isDarkMode={isDarkMode} />
                 <Project isDarkMode={isDarkMode} />
+                <Contact isDarkMode={isDarkMode} />
             </div>
         </>
     );
