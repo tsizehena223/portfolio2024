@@ -7,7 +7,7 @@ import Experience from "./pages/Experience";
 import Project from "./pages/Projects";
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const handleSwitchMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
