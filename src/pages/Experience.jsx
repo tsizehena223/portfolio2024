@@ -1,3 +1,5 @@
+import EducationIllustration from "../assets/education.svg";
+
 const Experience = ({ isDarkMode }) => {
     const experiences = {
         1: {
@@ -87,6 +89,9 @@ const Experience = ({ isDarkMode }) => {
                         </div>
                     </div>
                 ))}
+                <div className="hidden md:flex md:justify-center">
+                    <img src={EducationIllustration} alt="" className="w-5/6 mt-4 lg:mt-0" />
+                </div>
             </div>
 
         </div >
