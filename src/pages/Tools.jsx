@@ -12,9 +12,10 @@ import Mysql from "../assets/tools/mysql.png";
 import Github from "../assets/tools/github.svg";
 import Git from "../assets/tools/git.svg";
 import Linux from "../assets/tools/linux.png";
+import Flutter from "../assets/tools/flutter.svg";
 
 const Tools = ({ isDarkMode }) => {
-    const images = [Symfony, Tailwind, Git, Laravel, Html, Php, Github, ReactJs, Js, Linux, Css, Mysql];
+    const images = [Symfony, Tailwind, Git, Laravel, Html, Php, Github, ReactJs, Js, Linux, Css, Flutter, Mysql];
 
     return (
         <div id="tools" className={`${isDarkMode ? 'bg-slate-800' : 'bg-light-t'} mt-16 py-32 mb-0 h-auto md:mt-24 lg:mt-32 w-screen`}>

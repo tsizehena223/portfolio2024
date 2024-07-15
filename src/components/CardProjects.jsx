@@ -2,24 +2,31 @@ import React from 'react';
 import Neovim from '../assets/projects/sonic-nvim.png';
 import Portfolio from '../assets/projects/portfolio.png';
 import Langbridge from '../assets/projects/langbridge.png';
+import Gestia from '../assets/projects/gestia.png';
 
 const CardProjects = ({ isDarkMode }) => {
     const projects = {
+        0: {
+            "title": "GestIA",
+            "content": "Developed with Flutter, GestIA is a mobile application that help people manage their financial with AI's supports such as goal tracking and economy",
+            "image": Gestia,
+            "link": "https://github.com/tsizehena223/"
+        },
         1: {
             "title": "Sonic-Nvim",
             "content": "Developed with Lua language, Sonic-Nvim stands out for its lightweight nature and simplicity, offering advanced customization through its Vim heritage, fast and flexible.",
             "image": Neovim,
             "link": "https://github.com/tsizehena223/sonic-nvim"
-        },
-        2: {
-            "title": "My Portfolio",
-            "content": "This portfolio has been designed recently with ReactJS, summarizing my skills and experiences as a computer developer.",
-            "image": Portfolio,
-            "link": "https://github.com/tsizehena223/portfolio2024"
         }
     }
 
     const projects2 = {
+        0: {
+            "title": "My Portfolio",
+            "content": "This portfolio has been designed recently with ReactJS, summarizing my skills and experiences as a computer developer.",
+            "image": Portfolio,
+            "link": "https://github.com/tsizehena223/portfolio2024"
+        },
         1: {
             "title": "Langbridge",
             "content": "Developed with Symfony and ReactJS, Langbridge is a platform for language learning through direct interaction with native speakers of the language. It also serves as a social network. This is a school project (2nd year in computer science).",

@@ -2,6 +2,12 @@ import EducationIllustration from "../assets/education.svg";
 
 const Experience = ({ isDarkMode }) => {
     const experiences = {
+        0: {
+            "title": "Freelance",
+            "company": "Next-Rocket",
+            "date": "2024 ~ Since February 2024",
+            "content": "I participated in the creation of a SaaS with JavaScript and developed an application with Bubble."
+        },
         1: {
             "title": "Web Development Intern",
             "company": "LCom",
@@ -26,7 +32,6 @@ const Experience = ({ isDarkMode }) => {
             "date": "2021",
             "content": "I completed my first internship at SMMEC (formerly OTIV Tana). The objective was to immerse oneself in the role of a professional and gain a deeper understanding of the network administrator profession."
         }
-
     }
 
     const educations = {

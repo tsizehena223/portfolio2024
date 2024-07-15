@@ -3,6 +3,14 @@ import AnimatedWords from "../components/AnimatedWords";
 import Resume from "../assets/files/CV_Sarobidi.pdf";
 
 const About = ({ isDarkMode }) => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = Resume;
+        link.download = 'CV_Sarobidi.pdf';
+
+        link.click();
+    }
+
     return (
         <div id="about" className={`h-auto pt-32 pb-10 md:pt-40 md:flex lg:pt-32 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             <div className="text-center font-bold mx-8 md:w-3/5 md:mr-0 md:text-left lg:pt-20">
@@ -18,7 +26,7 @@ const About = ({ isDarkMode }) => {
                 </p>
                 <div className="mx-2 cin:mx-32 cin:mt-16 md:mx-0 md:mt-0 lg:mx-8 lgx:mx-16">
                     <a href="#contact"><button className={`w-56 py-3 rounded-full shadow-md md:mr-4 md:w-40 lg:w-56 ${isDarkMode ? 'text-purple-700 my-bg' : 'my-bg-dark text-slate-300'}`}>Contact Me</button></a>
-                    <a href="#resume" download={Resume} ><button className={`w-56 mt-4 border border-slate-500 py-3 md:w-44 lg:w-56 rounded-full shadow-md ${isDarkMode ? 'text-slate-300 my-bg-dark' : 'text-purple-700 my-bg'}`}>Download Resume</button></a>
+                    <button onClick={handleDownload} className={`w-56 mt-4 border border-slate-500 py-3 md:w-44 lg:w-56 rounded-full shadow-md ${isDarkMode ? 'text-slate-300 my-bg-dark' : 'text-purple-700 my-bg'}`}>Download Resume</button>
                 </div>
             </div>
             <div className="flex items-center justify-center mt-10 six:mt-16 md:-mt-4 md:w-2/5 lg:mr-16 lg:mt-16 lgx:mt-12">

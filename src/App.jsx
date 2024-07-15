@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Background from "./components/Background";
 import Tools from "./pages/Tools";
 import Experience from "./pages/Experience";
 import Project from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const handleSwitchMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
@@ -27,7 +26,7 @@ function App() {
     return (
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
-            <Background isDarkMode={isDarkMode} />
+            {/* <Background isDarkMode={isDarkMode} /> */}
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode} />
