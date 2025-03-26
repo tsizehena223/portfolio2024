@@ -3,34 +3,34 @@ import EducationIllustration from "../assets/education.svg";
 const Experience = ({ isDarkMode }) => {
     const experiences = {
         0: {
-            "title": "Freelance",
-            "company": "Next-Rocket",
-            "date": "2024 ~ Since February 2024",
-            "content": "I participated in the creation of a SaaS with JavaScript and developed an application with Bubble."
+            "title": "Apprenticeship (Alternance)",
+            "company": "Cap's Digit",
+            "date": "August 2024 - March 2025",
+            "content": "I worked in back-end web development using the Symfony framework and ReactJS. This experience allowed me to strengthen my skills in both back-end and front-end development. It also helped me improve my ability to manage multiple tasks effectively, as I was studying at the same time."
         },
         1: {
-            "title": "Web Development Intern",
-            "company": "LCom",
-            "date": "2023 ~ 2 months",
-            "content": "I did an internship in back-end web development using the Laravel framework. This internship allowed me to strengthen my skills in back-end programming. But that's not all, it also helped me to better organize my time as I was studying at the same time."
+            "title": "Freelance",
+            "company": "Next-Rocket",
+            "date": "February 2024 ~ June 2024",
+            "content": "I participated in the creation of a SaaS with JavaScript and developed an application with Bubble."
         },
         2: {
+            "title": "Web Development Intern",
+            "company": "LCom",
+            "date": "September ~ November 2023",
+            "content": "I did an internship in back-end web development using the Laravel framework. This internship allowed me to strengthen my skills in back-end programming. But that's not all, it also helped me to better organize my time as I was studying at the same time."
+        },
+        3: {
             "title": "Discovery Internship in IT Development",
             "company": "MyAgency",
             "date": "2022 ~ 2 weeks",
             "content": "I completed a discovery internship in web development. This allowed me to gain a good understanding of what the roles of a developer entail."
         },
-        3: {
+        4: {
             "title": "IT Intern",
             "company": "OMAPI",
             "date": "2022 ~ 3 months",
             "content": "During this internship, I was responsible for providing assistance in Information Technology, primarily focusing on strategies for its improvement. Additionally, I contributed to enhancing customer relations through over 100 calls."
-        },
-        4: {
-            "title": "Discovery Internship in Network Administration",
-            "company": "SMMEC",
-            "date": "2021",
-            "content": "I completed my first internship at SMMEC (formerly OTIV Tana). The objective was to immerse oneself in the role of a professional and gain a deeper understanding of the network administrator profession."
         }
     }
 

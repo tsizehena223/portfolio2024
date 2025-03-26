@@ -30,11 +30,7 @@ const Tools = ({ isDarkMode }) => {
                         alt=""
                         key={index}
                         className={`
-                            rounded-full my-4 mx-4 animate-bounce w-10 sm:w-12 md:w-16
-                            ${(index === 0 || index === 3 || index === 5) && 'bg-blue-500'}
-                            ${(index === 2 || index === 6 || index === 9 || index === 11) && 'bg-red-500'}
-                            ${(index === 4 || index === 8 || index === 7 || index === 10) && 'bg-yellow-500'}
-                            ${(index === 1 || index === 10) && 'bg-green-500'}
+                            rounded-full my-4 mx-4 animate-bounce w-10 sm:w-12 md:w-16 bg-slate-${isDarkMode ? "400" : "200"}
                         `}
                         style={{
                             animationDelay: `${index * 200}ms`

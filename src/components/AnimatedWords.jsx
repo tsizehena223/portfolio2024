@@ -4,11 +4,9 @@ const AnimatedWords = () => {
     return (
         <TypeAnimation
             sequence={[
-                'Sarobidi',
+                'Tsizehena Sarobidi',
                 2500,
-                'an IT Student',
-                2500,
-                'a Web Developper',
+                'a Software Engineer',
                 2500
             ]}
             wrapper="span"

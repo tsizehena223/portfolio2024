@@ -26,7 +26,6 @@ function App() {
     return (
         <>
             <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
-            {/* <Background isDarkMode={isDarkMode} /> */}
             <div id="sections">
                 <About isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode} />

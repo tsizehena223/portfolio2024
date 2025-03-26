@@ -7,7 +7,7 @@ const Contact = ({ isDarkMode }) => {
                 <a href="https://www.linkedin.com/in/sarobidi-tsizehena/" target="_blank" rel="noopener noreferrer"><li className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} fa-xl fa-brands fa-linkedin mx-3`}></li></a>
                 <a href="mailto:tsizehena223@gmail.com" target="_blank" rel="noopener noreferrer"><li className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} fa-xl fa-solid fa-envelope mx-3`}></li></a>
                 <a href="tel:+261327502539" target="_blank" rel="noopener noreferrer"><li className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} fa-xl fa-solid fa-phone mx-3`}></li></a>
-                <a href="https://www.facebook.com/TsizehenaSarobidi" target="_blank" rel="noopener noreferrer"><li className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} fa-xl fa-brands fa-facebook mx-3`}></li></a>
+                <a href="https://www.facebook.com/Tsizehena" target="_blank" rel="noopener noreferrer"><li className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} fa-xl fa-brands fa-facebook mx-3`}></li></a>
             </div>
         </div >
     )
