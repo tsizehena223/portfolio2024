@@ -1,4 +1,5 @@
 import Profil from "../assets/profil.png";
+import ProfilDark from "../assets/profil-dark.png";
 import AnimatedWords from "../components/AnimatedWords";
 import Resume from "../assets/files/CV_Sarobidi.pdf";
 
@@ -30,7 +31,7 @@ const About = ({ isDarkMode }) => {
                 </div>
             </div>
             <div className="flex items-center justify-center mt-10 six:mt-16 md:-mt-4 md:w-2/5 lg:mr-16 lg:mt-16 lgx:mt-12">
-                <img src={Profil} alt="" className={`border border-${isDarkMode ? '2' : '1'} border-${isDarkMode ? 'slate-800' : 'slate-500 border-opacity-30'} rounded-2xl w-1/2 cin:w-2/5 md:w-4/5 lg:w-4/5 lgx:w-3/4`} />
+                <img src={isDarkMode ? ProfilDark : Profil} alt="" className={`border border-${isDarkMode ? '2' : '1'} border-${isDarkMode ? 'slate-700' : 'slate-800 border-opacity-30'} rounded-2xl w-1/2 cin:w-2/5 md:w-4/5 lg:w-4/5 lgx:w-3/4`} />
             </div>
         </div>
     )
