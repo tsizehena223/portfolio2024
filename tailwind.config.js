@@ -4,7 +4,17 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            keyframes: {
+                smallBounce: {
+                    '0%, 100%': { transform: 'translateY(0)', animationTimingFunction: 'ease-in-out' },
+                    '50%': { transform: 'translateY(-0.5rem)', animationTimingFunction: 'ease-in-out' },
+                },
+            },
+            animation: {
+                smallBounce: 'smallBounce 1.5s infinite',
+            },
+        },
         screens: {
             "tn": "460px",
             "sh": "458px",

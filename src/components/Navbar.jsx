@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Mode from '../assets/mode.png';
 
 const Navbar = ({ isDarkMode, onSwitchMode }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +9,6 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
 
     const closeMenu = () => {
         setIsOpen(false);
-    }
-
-    const modestyle = {
-        "width": "75px",
     }
 
     const swichModeAndClose = () => {
@@ -58,8 +53,8 @@ const Navbar = ({ isDarkMode, onSwitchMode }) => {
                 <i className={`my-bg opacity-75 w-40 my-2 rounded-full shadow-lg px-8 py-6 fa-regular fa-flag fa-xl ${isDarkMode && 'my-bg-dark'} text-purple-700 hover:cursor-pointer`} onClick={onSwitchLanguage}></i>
             </div>
 
-            <div className={`my-bg hidden hui:flex md:items-center border ${isDarkMode && 'border-slate-800 my-bg-dark'} rounded-l-full lg:rounded-full lg:mx-8 shadow-xl right-0 top-0 lg:px-12 px-6 hover:cursor-pointer`}>
-                <img src={Mode} alt='' className='hidden md:block py-5' onClick={onSwitchMode} style={modestyle} />
+            <div className={`my-bg hidden hui:flex hui:px-6 md:items-center border ${isDarkMode && 'border-slate-800 my-bg-dark'} rounded-l-full lg:rounded-full lg:mx-8 shadow-xl right-0 top-0 lg:px-12 px-1 hover:cursor-pointer`}>
+                <i className={`transition-all duration-500 ease-in-out transform pr-1 opacity-75 w-20 ${isDarkMode ? 'border-slate-700' : 'border-slate-300 pl-4'} border rounded-full shadow-xl px-10 py-5 fa-solid fa-${isDarkMode ? 'sun' : 'moon'} fa-xl hover:cursor-pointer ${!isDarkMode ? 'text-slate-500' : 'text-purple-500'}`} onClick={swichModeAndClose}></i>
                 <div className={`ml-3 w-1 h-20 ${isDarkMode ? 'bg-slate-800' : 'bg-slate-200'}`}></div>
                 <i className='ml-4 fa-regular fa-flag fa-2x text-purple-700 hover:cursor-pointer' onClick={onSwitchLanguage}></i>
             </div>

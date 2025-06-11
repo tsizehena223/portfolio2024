@@ -10,7 +10,7 @@ const CardProjects = ({ isDarkMode }) => {
             "title": "GestIA",
             "content": "Developed with Flutter, GestIA is a mobile application that help people manage their financial with AI's supports such as goal tracking and economy",
             "image": Gestia,
-            "link": "https://github.com/tsizehena223/"
+            "link": "https://github.com/tsizehena223/gestia"
         },
         1: {
             "title": "Sonic-Nvim",
@@ -31,7 +31,7 @@ const CardProjects = ({ isDarkMode }) => {
             "title": "Langbridge",
             "content": "Developed with Symfony and ReactJS, Langbridge is a platform for language learning through direct interaction with native speakers of the language. It also serves as a social network. This is a school project (2nd year in computer science).",
             "image": Langbridge,
-            "link": "https://github.com/tsizehena223"
+            "link": "https://github.com/tsizehena223/langbridge"
         }
     }
 

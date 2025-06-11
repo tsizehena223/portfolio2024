@@ -12,6 +12,7 @@ body {
   background-color: #DCF2F1;
   margin: 0;
   padding: 0;
+  transition: background-color 1s ease, color 1s ease;
 }
 
 code {

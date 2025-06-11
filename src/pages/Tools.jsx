@@ -12,7 +12,7 @@ import Mysql from "../assets/tools/mysql.png";
 import Github from "../assets/tools/github.svg";
 import Git from "../assets/tools/git.svg";
 import Linux from "../assets/tools/linux.png";
-import Flutter from "../assets/tools/flutter.svg";
+import Flutter from "../assets/tools/flutter.png";
 
 const Tools = ({ isDarkMode }) => {
     const images = [Symfony, Tailwind, Git, Laravel, Html, Php, Github, ReactJs, Js, Linux, Css, Flutter, Mysql];
@@ -30,10 +30,10 @@ const Tools = ({ isDarkMode }) => {
                         alt=""
                         key={index}
                         className={`
-                            rounded-full my-4 mx-4 animate-bounce w-10 sm:w-12 md:w-16 bg-slate-${isDarkMode ? "400" : "200"}
+                            rounded-full my-4 mx-4 animate-smallBounce w-10 sm:w-12 md:w-16 bg-slate-${isDarkMode ? "400" : "200"}
                         `}
                         style={{
-                            animationDelay: `${index * 200}ms`
+                            animationDelay: `${index * 100}ms`
                         }}
                         src={imageUrl}
                     />
