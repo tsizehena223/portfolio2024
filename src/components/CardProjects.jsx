@@ -62,7 +62,7 @@ const CardProjects = ({ isDarkMode }) => {
                             <img
                                 className="w-auto py-4 h-48 sm:h-64 mt-4"
                                 src={project.image}
-                                alt=""
+                                alt="Project screenshoot"
                             />
                         </a>
                         <span className={`mt-2 block w-full h-0.5 ${isDarkMode ? 'bg-slate-600' : 'bg-slate-400'}`}></span>
