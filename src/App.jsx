@@ -11,30 +11,63 @@ function App() {
 
     const handleSwitchMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
-    }
+    };
 
+    // Register GSAP + ScrollSmoother on mount
     useEffect(() => {
-        const body = document.body;
+        const gsap = window.gsap;
+        const ScrollSmoother = window.ScrollSmoother;
 
-        if (isDarkMode) {
-            body.classList.add("dark");
-        } else {
-            body.classList.remove("dark")
+        if (gsap && ScrollSmoother) {
+            gsap.registerPlugin(ScrollSmoother);
+
+            ScrollSmoother.create({
+                wrapper: "#smooth-wrapper",
+                content: "#smooth-content",
+                smooth: 1.5,
+                smoothTouch: 0.1,
+                effects: true,
+            });
         }
-    }, [isDarkMode])
+    }, []);
+
+    // Toggle dark mode
+    useEffect(() => {
+        document.body.classList.toggle("dark", isDarkMode);
+    }, [isDarkMode]);
 
     return (
         <>
-            <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
-            <div id="sections">
-                <About isDarkMode={isDarkMode} />
-                <Experience isDarkMode={isDarkMode} />
-                <Tools isDarkMode={isDarkMode} />
-                <Project isDarkMode={isDarkMode} />
-                <Contact isDarkMode={isDarkMode} />
+            <header
+                style={{
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: "100px",
+                    zIndex: 1000,
+                    backdropFilter: "blur(20px)",
+                    WebkitBackdropFilter: "blur(20px)",
+                    backgroundColor: "rgba(255, 255, 255, 0.6)",
+                }}
+            >
+                <Navbar isDarkMode={isDarkMode} onSwitchMode={handleSwitchMode} />
+            </header>
+
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <div id="sections">
+                        <About isDarkMode={isDarkMode} />
+                        <Experience isDarkMode={isDarkMode} />
+                        <Tools isDarkMode={isDarkMode} />
+                        <Project isDarkMode={isDarkMode} />
+                        <Contact isDarkMode={isDarkMode} />
+                    </div>
+                </div>
             </div>
         </>
     );
 }
 
 export default App;
+
